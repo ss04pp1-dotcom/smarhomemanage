@@ -1,0 +1,6 @@
+{
+  "name": "স্বাস্থ্য ব্যয় বিশ্লেষক",
+  "description": "Health Expense & Budget Analyzer",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
