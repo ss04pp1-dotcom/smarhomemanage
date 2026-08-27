@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
 class DetailedAnalyticsScreen extends StatelessWidget {
   const DetailedAnalyticsScreen({super.key});
@@ -21,7 +20,7 @@ class DetailedAnalyticsScreen extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
             child: Column(
               children: [
-                const Icon(LucideIcons.barChart, size: 64, color: Color(0xFF08A86B)),
+                const Icon(Icons.bar_chart, size: 64, color: Color(0xFF08A86B)),
                 const SizedBox(height: 16),
                 const Text('গ্রাফিকাল ভিউ শীঘ্রই আসছে', style: TextStyle(color: Colors.grey)),
               ],

@@ -1,6 +1,5 @@
 import 'edit_expense_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'search_screen.dart';
 
 class HistoryScreen extends StatelessWidget {
@@ -17,7 +16,7 @@ class HistoryScreen extends StatelessWidget {
               children: [
                 const Text('খরচের ইতিহাস', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF082B63))),
                 IconButton(
-                  icon: const Icon(LucideIcons.search, color: Color(0xFF082B63)),
+                  icon: const Icon(Icons.search, color: Color(0xFF082B63)),
                   onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SearchScreen())),
                 ),
               ],
@@ -27,20 +26,20 @@ class HistoryScreen extends StatelessWidget {
             child: ListView(
               padding: const EdgeInsets.all(20),
               children: [
-                _buildTransactionItem(LucideIcons.pill, 'নাপা এক্সট্রা', 'ওষুধ', '৳১২০', 'আজ, সকাল ১০:৩০', Colors.green),
+                _buildTransactionItem(context, Icons.medical_services, 'নাপা এক্সট্রা', 'ওষুধ', '৳১২০', 'আজ, সকাল ১০:৩০', Colors.green),
                 const SizedBox(height: 12),
-                _buildTransactionItem(LucideIcons.stethoscope, 'ডাক্তার ফি', 'পরামর্শ', '৳১,০০০', 'গতকাল', Colors.blue),
+                _buildTransactionItem(context, Icons.health_and_safety, 'ডাক্তার ফি', 'পরামর্শ', '৳১,০০০', 'গতকাল', Colors.blue),
                 const SizedBox(height: 12),
-                _buildTransactionItem(LucideIcons.activity, 'ব্লাড টেস্ট', 'পরীক্ষা', '৳২,৫০০', '২০ আগস্ট', Colors.orange),
+                _buildTransactionItem(context, Icons.show_chart, 'ব্লাড টেস্ট', 'পরীক্ষা', '৳২,৫০০', '২০ আগস্ট', Colors.orange),
               ],
             ),
           ),
         ],
       ),
-    ));
+    );
   }
 
-  Widget _buildTransactionItem(IconData icon, String title, String subtitle, String amount, String date, MaterialColor color) {
+  Widget _buildTransactionItem(BuildContext context, IconData icon, String title, String subtitle, String amount, String date, MaterialColor color) {
     return InkWell(onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const EditExpenseScreen())), child: Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(

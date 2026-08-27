@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
 class FamilyMembersScreen extends StatelessWidget {
   const FamilyMembersScreen({super.key});
@@ -13,7 +12,7 @@ class FamilyMembersScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.black),
         title: const Text('পরিবারের সদস্য', style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold)),
         actions: [
-          IconButton(icon: const Icon(LucideIcons.userPlus), onPressed: () {})
+          IconButton(icon: const Icon(Icons.person_add), onPressed: () {})
         ],
       ),
       body: ListView(

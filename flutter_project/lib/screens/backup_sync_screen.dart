@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
 class BackupSyncScreen extends StatelessWidget {
   const BackupSyncScreen({super.key});
@@ -25,7 +24,7 @@ class BackupSyncScreen extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const Icon(LucideIcons.cloud, color: Colors.blue, size: 32),
+                      const Icon(Icons.cloud, color: Colors.blue, size: 32),
                       const SizedBox(width: 16),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

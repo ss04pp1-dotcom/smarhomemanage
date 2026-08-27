@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import '../main.dart';
 
 class SuccessScreen extends StatelessWidget {
@@ -15,7 +14,7 @@ class SuccessScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(color: Colors.green.shade50, shape: BoxShape.circle),
-              child: const Icon(LucideIcons.checkCircle, size: 80, color: Colors.green),
+              child: const Icon(Icons.check_circle, size: 80, color: Colors.green),
             ),
             const SizedBox(height: 24),
             const Text('সফল হয়েছে!', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xFF082B63))),

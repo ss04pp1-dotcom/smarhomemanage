@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'full_report_preview_screen.dart';
 
 class ReportScreen extends StatelessWidget {
@@ -15,7 +14,7 @@ class ReportScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Text('রিপোর্ট', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF082B63))),
-                IconButton(icon: const Icon(LucideIcons.download, color: Color(0xFF082B63)), onPressed: () {}),
+                IconButton(icon: const Icon(Icons.download, color: Color(0xFF082B63)), onPressed: () {}),
               ],
             ),
           ),
@@ -43,7 +42,7 @@ class ReportScreen extends StatelessWidget {
         decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.grey.shade200)),
         child: Row(
           children: [
-            Container(padding: const EdgeInsets.all(12), decoration: BoxDecoration(color: Colors.blue.shade50, shape: BoxShape.circle), child: const Icon(LucideIcons.fileText, color: Colors.blue)),
+            Container(padding: const EdgeInsets.all(12), decoration: BoxDecoration(color: Colors.blue.shade50, shape: BoxShape.circle), child: const Icon(Icons.description, color: Colors.blue)),
             const SizedBox(width: 16),
             Expanded(
               child: Column(
@@ -54,7 +53,7 @@ class ReportScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const Icon(LucideIcons.chevronRight, color: Colors.grey)
+            const Icon(Icons.chevron_right, color: Colors.grey)
           ],
         ),
       ),

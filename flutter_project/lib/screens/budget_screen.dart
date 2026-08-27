@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'home_screen.dart';
 import 'settings_screen.dart';
 import 'create_budget_screen.dart';
@@ -36,12 +35,12 @@ class BudgetScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
-                        icon: const Icon(LucideIcons.arrowLeft, color: Colors.white),
+                        icon: const Icon(Icons.arrow_back, color: Colors.white),
                         onPressed: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const HomeScreen())),
                       ),
                       const Text('বাজেট সেটিং', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
                       IconButton(
-                        icon: const Icon(LucideIcons.settings, color: Colors.white),
+                        icon: const Icon(Icons.settings, color: Colors.white),
                         onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())),
                       ),
                     ],
@@ -83,7 +82,7 @@ class BudgetScreen extends StatelessWidget {
                                     width: 48,
                                     height: 48,
                                     decoration: const BoxDecoration(color: Color(0xFFE5F6EE), shape: BoxShape.circle),
-                                    child: const Icon(LucideIcons.target, color: Color(0xFF08A86B), size: 28),
+                                    child: const Icon(Icons.adjust, color: Color(0xFF08A86B), size: 28),
                                   ),
                                 ],
                               ),
@@ -112,13 +111,13 @@ class BudgetScreen extends StatelessWidget {
                         const SizedBox(height: 16),
                         
                         // Categories
-                        _buildCategoryCard('ওষুধ', '5,000', 0.62, LucideIcons.pill, Colors.green.shade600, Colors.green.shade100, const Color(0xFFF59E0B)),
+                        _buildCategoryCard('ওষুধ', '5,000', 0.62, Icons.medical_services, Colors.green.shade600, Colors.green.shade100, const Color(0xFFF59E0B)),
                         const SizedBox(height: 16),
-                        _buildCategoryCard('ডাক্তার ফি', '2,000', 0.45, LucideIcons.stethoscope, Colors.blue.shade600, Colors.blue.shade100, const Color(0xFF08A86B)),
+                        _buildCategoryCard('ডাক্তার ফি', '2,000', 0.45, Icons.health_and_safety, Colors.blue.shade600, Colors.blue.shade100, const Color(0xFF08A86B)),
                         const SizedBox(height: 16),
-                        _buildCategoryCard('পরীক্ষা-নিরীক্ষা', '4,000', 0.78, LucideIcons.activity, Colors.purple.shade600, Colors.purple.shade100, const Color(0xFFF97316)),
+                        _buildCategoryCard('পরীক্ষা-নিরীক্ষা', '4,000', 0.78, Icons.show_chart, Colors.purple.shade600, Colors.purple.shade100, const Color(0xFFF97316)),
                         const SizedBox(height: 16),
-                        _buildCategoryCard('জরুরি খরচ', '4,000', 0.40, LucideIcons.shieldAlert, Colors.red.shade600, Colors.red.shade100, const Color(0xFF08A86B)),
+                        _buildCategoryCard('জরুরি খরচ', '4,000', 0.40, Icons.warning, Colors.red.shade600, Colors.red.shade100, const Color(0xFF08A86B)),
                       ],
                     ),
                   ),
@@ -138,7 +137,7 @@ class BudgetScreen extends StatelessWidget {
               ),
               child: ElevatedButton.icon(
                 onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CreateBudgetScreen())),
-                icon: const Icon(LucideIcons.plus, color: Colors.white),
+                icon: const Icon(Icons.add, color: Colors.white),
                 label: const Text('নতুন বাজেট নির্ধারণ', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF082B63),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
 class NotificationsScreen extends StatelessWidget {
   const NotificationsScreen({super.key});
@@ -16,11 +15,11 @@ class NotificationsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          _buildNotification(LucideIcons.alertTriangle, 'বাজেট সতর্কতা', 'আপনার "টেস্ট/রিপোর্ট" ক্যাটাগরির বাজেট ৯০% অতিক্রম করেছে।', Colors.orange),
+          _buildNotification(Icons.warning_amber, 'বাজেট সতর্কতা', 'আপনার "টেস্ট/রিপোর্ট" ক্যাটাগরির বাজেট ৯০% অতিক্রম করেছে।', Colors.orange),
           const SizedBox(height: 12),
-          _buildNotification(LucideIcons.cloud, 'ডেটা ব্যাকআপ', 'আপনার ডেটা সফলভাবে Google Drive-এ সিঙ্ক হয়েছে।', Colors.blue),
+          _buildNotification(Icons.cloud, 'ডেটা ব্যাকআপ', 'আপনার ডেটা সফলভাবে Google Drive-এ সিঙ্ক হয়েছে।', Colors.blue),
           const SizedBox(height: 12),
-          _buildNotification(LucideIcons.checkCircle, 'নতুন খরচ যোগ', '৳১২০ (নাপা এক্সট্রা) সফলভাবে যোগ করা হয়েছে।', Colors.green),
+          _buildNotification(Icons.check_circle, 'নতুন খরচ যোগ', '৳১২০ (নাপা এক্সট্রা) সফলভাবে যোগ করা হয়েছে।', Colors.green),
         ],
       ),
     );

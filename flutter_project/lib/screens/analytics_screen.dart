@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'detailed_analytics_screen.dart';
 
 class AnalyticsScreen extends StatelessWidget {
@@ -15,7 +14,7 @@ class AnalyticsScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Text('অ্যানালিটিক্স', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF082B63))),
-                IconButton(icon: const Icon(LucideIcons.barChart2, color: Color(0xFF082B63)), onPressed: () {}),
+                IconButton(icon: const Icon(Icons.bar_chart, color: Color(0xFF082B63)), onPressed: () {}),
               ],
             ),
           ),
@@ -37,7 +36,7 @@ class AnalyticsScreen extends StatelessWidget {
                         const SizedBox(height: 16),
                         Row(
                           children: [
-                            const Icon(LucideIcons.trendingDown, color: Colors.green, size: 16),
+                            const Icon(Icons.trending_down, color: Colors.green, size: 16),
                             const SizedBox(width: 4),
                             const Text('গত মাসের তুলনায় ১২% কম', style: TextStyle(color: Colors.green, fontSize: 12)),
                           ],

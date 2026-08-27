@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -14,13 +13,13 @@ class SearchScreen extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  IconButton(icon: const Icon(LucideIcons.arrowLeft), onPressed: () => Navigator.pop(context)),
+                  IconButton(icon: const Icon(Icons.arrow_back), onPressed: () => Navigator.pop(context)),
                   Expanded(
                     child: TextField(
                       autofocus: true,
                       decoration: InputDecoration(
                         hintText: 'খরচ খুঁজুন...',
-                        prefixIcon: const Icon(LucideIcons.search),
+                        prefixIcon: const Icon(Icons.search),
                         filled: true,
                         fillColor: Colors.white,
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none),
@@ -35,7 +34,7 @@ class SearchScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
-                    Icon(LucideIcons.search, size: 48, color: Colors.grey),
+                    Icon(Icons.search, size: 48, color: Colors.grey),
                     SizedBox(height: 16),
                     Text('কোনো ফলাফল পাওয়া যায়নি', style: TextStyle(fontWeight: FontWeight.bold)),
                   ],

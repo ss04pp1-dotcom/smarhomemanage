@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'login_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -15,7 +14,7 @@ class OnboardingScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(),
-              const Icon(LucideIcons.activity, size: 100, color: Color(0xFF08A86B)),
+              const Icon(Icons.show_chart, size: 100, color: Color(0xFF08A86B)),
               const SizedBox(height: 40),
               const Text('আপনার স্বাস্থ্য ব্যয় ট্র্যাক করুন', textAlign: TextAlign.center, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xFF082B63))),
               const SizedBox(height: 16),

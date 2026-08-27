@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
 class FullReportPreviewScreen extends StatelessWidget {
   const FullReportPreviewScreen({super.key});
@@ -13,7 +12,7 @@ class FullReportPreviewScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.black),
         title: const Text('রিপোর্ট প্রিভিউ', style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold)),
         actions: [
-          IconButton(icon: const Icon(LucideIcons.download), onPressed: () {}),
+          IconButton(icon: const Icon(Icons.download), onPressed: () {}),
         ],
       ),
       body: SingleChildScrollView(
@@ -38,7 +37,7 @@ class FullReportPreviewScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton.icon(
                   onPressed: () {},
-                  icon: const Icon(LucideIcons.share, color: Colors.white),
+                  icon: const Icon(Icons.share, color: Colors.white),
                   label: const Text('PDF হিসেবে শেয়ার করুন', style: TextStyle(color: Colors.white)),
                   style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF08A86B), padding: const EdgeInsets.symmetric(vertical: 16), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
                 ),

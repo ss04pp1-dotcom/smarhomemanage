@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
 class AddExpenseScreen extends StatefulWidget {
   const AddExpenseScreen({super.key});
@@ -14,12 +13,12 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
   String _selectedCategory = 'medicine';
 
   final List<Map<String, dynamic>> _categories = [
-    {'id': 'medicine', 'label': 'ওষুধ', 'icon': LucideIcons.pill, 'color': Colors.green},
-    {'id': 'doctor', 'label': 'ডাক্তার ফি', 'icon': LucideIcons.stethoscope, 'color': Colors.blue},
-    {'id': 'test', 'label': 'টেস্ট/রিপোর্ট', 'icon': LucideIcons.activity, 'color': Colors.orange},
-    {'id': 'hospital', 'label': 'হাসপাতাল', 'icon': LucideIcons.building, 'color': Colors.red},
-    {'id': 'transport', 'label': 'যাতায়াত', 'icon': LucideIcons.car, 'color': Colors.purple},
-    {'id': 'other', 'label': 'অন্যান্য', 'icon': LucideIcons.layoutGrid, 'color': Colors.grey},
+    {'id': 'medicine', 'label': 'ওষুধ', 'icon': Icons.medical_services, 'color': Colors.green},
+    {'id': 'doctor', 'label': 'ডাক্তার ফি', 'icon': Icons.health_and_safety, 'color': Colors.blue},
+    {'id': 'test', 'label': 'টেস্ট/রিপোর্ট', 'icon': Icons.show_chart, 'color': Colors.orange},
+    {'id': 'hospital', 'label': 'হাসপাতাল', 'icon': Icons.star, 'color': Colors.red},
+    {'id': 'transport', 'label': 'যাতায়াত', 'icon': Icons.star, 'color': Colors.purple},
+    {'id': 'other', 'label': 'অন্যান্য', 'icon': Icons.star, 'color': Colors.grey},
   ];
 
   @override

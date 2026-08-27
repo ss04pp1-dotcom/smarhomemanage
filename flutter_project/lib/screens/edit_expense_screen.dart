@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'success_screen.dart';
 
 class EditExpenseScreen extends StatelessWidget {
@@ -14,7 +13,7 @@ class EditExpenseScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.black),
         title: const Text('খরচ সম্পাদনা', style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold)),
         actions: [
-          IconButton(icon: const Icon(LucideIcons.trash2, color: Colors.red), onPressed: () => Navigator.pop(context)),
+          IconButton(icon: const Icon(Icons.delete, color: Colors.red), onPressed: () => Navigator.pop(context)),
         ],
       ),
       body: SingleChildScrollView(

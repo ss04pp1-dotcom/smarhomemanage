@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'onboarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -25,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Icon(LucideIcons.heartPulse, size: 80, color: Colors.white),
+            Icon(Icons.favorite, size: 80, color: Colors.white),
             SizedBox(height: 20),
             Text('স্বাস্থ্য ব্যয়', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white)),
           ],

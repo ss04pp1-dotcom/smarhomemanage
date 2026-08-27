@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
 import 'screens/splash_screen.dart';
 import 'screens/home_screen.dart';
@@ -71,11 +70,11 @@ class _MainNavigatorState extends State<MainNavigator> {
           unselectedLabelStyle: const TextStyle(fontSize: 10, fontWeight: FontWeight.w500),
           elevation: 0,
           items: const [
-            BottomNavigationBarItem(icon: Icon(LucideIcons.home), label: 'হোম'),
-            BottomNavigationBarItem(icon: Icon(LucideIcons.plusCircle), label: 'খরচ'),
-            BottomNavigationBarItem(icon: Icon(LucideIcons.pieChart), label: 'বিশ্লেষণ'),
-            BottomNavigationBarItem(icon: Icon(LucideIcons.target), label: 'বাজেট'),
-            BottomNavigationBarItem(icon: Icon(LucideIcons.history), label: 'ইতিহাস'),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'হোম'),
+            BottomNavigationBarItem(icon: Icon(Icons.add_circle_outline), label: 'খরচ'),
+            BottomNavigationBarItem(icon: Icon(Icons.pie_chart), label: 'বিশ্লেষণ'),
+            BottomNavigationBarItem(icon: Icon(Icons.adjust), label: 'বাজেট'),
+            BottomNavigationBarItem(icon: Icon(Icons.history), label: 'ইতিহাস'),
           ],
         ),
       ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'profile_edit_screen.dart';
 import 'backup_sync_screen.dart';
 import 'login_screen.dart';
@@ -29,22 +28,22 @@ class SettingsScreen extends StatelessWidget {
               child: Column(
                 children: [
                   _buildSettingsGroup([
-                    _buildSettingsItem(context, LucideIcons.user, 'প্রোফাইল সম্পাদনা', Colors.blue, destination: const ProfileEditScreen()),
-                    _buildSettingsItem(context, LucideIcons.target, 'বাজেট সেটিংস', Colors.green),
-                    _buildSettingsItem(context, LucideIcons.bell, 'নোটিফিকেশন সেটিংস', Colors.orange),
-                    _buildSettingsItem(context, LucideIcons.database, 'ডেটা ব্যাকআপ', Colors.purple, showBorder: false, destination: const BackupSyncScreen()),
+                    _buildSettingsItem(context, Icons.person, 'প্রোফাইল সম্পাদনা', Colors.blue, destination: const ProfileEditScreen()),
+                    _buildSettingsItem(context, Icons.adjust, 'বাজেট সেটিংস', Colors.green),
+                    _buildSettingsItem(context, Icons.notifications, 'নোটিফিকেশন সেটিংস', Colors.orange),
+                    _buildSettingsItem(context, Icons.backup, 'ডেটা ব্যাকআপ', Colors.purple, showBorder: false, destination: const BackupSyncScreen()),
                   ]),
                   const SizedBox(height: 24),
                   
                   _buildSettingsGroup([
-                    _buildSettingsItem(context, LucideIcons.moon, 'ডার্ক মোড', Colors.indigo, isToggle: true, toggleValue: false),
-                    _buildSettingsItem(context, LucideIcons.globe, 'ভাষা', Colors.blue, subtitle: 'বাংলা', showBorder: false),
+                    _buildSettingsItem(context, Icons.dark_mode, 'ডার্ক মোড', Colors.indigo, isToggle: true, toggleValue: false),
+                    _buildSettingsItem(context, Icons.language, 'ভাষা', Colors.blue, subtitle: 'বাংলা', showBorder: false),
                   ]),
                   const SizedBox(height: 24),
                   
                   _buildSettingsGroup([
-                    _buildSettingsItem(context, LucideIcons.helpCircle, 'সাহায্য ও সহায়তা', Colors.teal),
-                    _buildSettingsItem(context, LucideIcons.logOut, 'লগআউট', Colors.red, isLogout: true, showBorder: false, destination: const LoginScreen()),
+                    _buildSettingsItem(context, Icons.help, 'সাহায্য ও সহায়তা', Colors.teal),
+                    _buildSettingsItem(context, Icons.logout, 'লগআউট', Colors.red, isLogout: true, showBorder: false, destination: const LoginScreen()),
                   ]),
                 ],
               ),
@@ -109,7 +108,7 @@ class SettingsScreen extends StatelessWidget {
                 activeColor: const Color(0xFF08A86B),
               )
             else
-              const Icon(LucideIcons.chevronRight, color: Colors.grey, size: 20),
+              const Icon(Icons.chevron_right, color: Colors.grey, size: 20),
           ],
         ),
       ),

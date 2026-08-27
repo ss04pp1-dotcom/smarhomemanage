@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'settings_screen.dart';
 import 'notifications_screen.dart';
 import 'family_members_screen.dart';
@@ -40,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       IconButton(
                         onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())),
-                        icon: const Icon(LucideIcons.menu, color: Colors.white),
+                        icon: const Icon(Icons.menu, color: Colors.white),
                         padding: EdgeInsets.zero,
                         constraints: const BoxConstraints(),
                       ),
@@ -80,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                         children: [
                           IconButton(
                             onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const NotificationsScreen())),
-                            icon: const Icon(LucideIcons.bell, color: Colors.white),
+                            icon: const Icon(Icons.notifications, color: Colors.white),
                             padding: EdgeInsets.zero,
                             constraints: const BoxConstraints(),
                           ),
@@ -181,12 +180,12 @@ class HomeScreen extends StatelessWidget {
                       mainAxisSpacing: 16,
                       childAspectRatio: 2.2,
                       children: [
-                        _buildStatCard('গত মাস', '৳6,800', const Icon(LucideIcons.dollarSign, color: Color(0xFF08A86B), size: 20), const Color(0xFFE5F6EE)),
-                        _buildStatCard('ব্যয় বৃদ্ধি', '+18%', const Icon(LucideIcons.pieChart, color: Colors.teal, size: 20), Colors.teal.shade50),
-                        _buildStatCard('মোট লেনদেন', '42', const Icon(LucideIcons.fileText, color: Colors.indigo, size: 20), Colors.indigo.shade50),
+                        _buildStatCard('গত মাস', '৳6,800', const Icon(Icons.attach_money, color: Color(0xFF08A86B), size: 20), const Color(0xFFE5F6EE)),
+                        _buildStatCard('ব্যয় বৃদ্ধি', '+18%', const Icon(Icons.pie_chart, color: Colors.teal, size: 20), Colors.teal.shade50),
+                        _buildStatCard('মোট লেনদেন', '42', const Icon(Icons.description, color: Colors.indigo, size: 20), Colors.indigo.shade50),
                         InkWell(
                           onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const FamilyMembersScreen())),
-                          child: _buildStatCard('পরিবার সদস্য', '3', const Icon(LucideIcons.users, color: Colors.blue, size: 20), Colors.blue.shade50),
+                          child: _buildStatCard('পরিবার সদস্য', '3', const Icon(Icons.people, color: Colors.blue, size: 20), Colors.blue.shade50),
                         ),
                       ],
                     ),
@@ -197,11 +196,11 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(height: 12),
                     Row(
                       children: [
-                        Expanded(child: _buildQuickAction(context, 'খরচ যোগ করুন', LucideIcons.edit3, const Color(0xFFE5F6EE), const Color(0xFFCCECE0), const Color(0xFF08A86B), const AddExpenseScreen())),
+                        Expanded(child: _buildQuickAction(context, 'খরচ যোগ করুন', Icons.edit, const Color(0xFFE5F6EE), const Color(0xFFCCECE0), const Color(0xFF08A86B), const AddExpenseScreen())),
                         const SizedBox(width: 12),
-                        Expanded(child: _buildQuickAction(context, 'বাজেট সেট করুন', LucideIcons.target, Colors.indigo.shade50, Colors.indigo.shade100, Colors.indigo.shade600, const BudgetScreen())),
+                        Expanded(child: _buildQuickAction(context, 'বাজেট সেট করুন', Icons.adjust, Colors.indigo.shade50, Colors.indigo.shade100, Colors.indigo.shade600, const BudgetScreen())),
                         const SizedBox(width: 12),
-                        Expanded(child: _buildQuickAction(context, 'রিপোর্ট দেখুন', LucideIcons.fileText, Colors.teal.shade50, Colors.teal.shade100, Colors.teal.shade600, const ReportScreen())),
+                        Expanded(child: _buildQuickAction(context, 'রিপোর্ট দেখুন', Icons.description, Colors.teal.shade50, Colors.teal.shade100, Colors.teal.shade600, const ReportScreen())),
                       ],
                     ),
                     const SizedBox(height: 24),

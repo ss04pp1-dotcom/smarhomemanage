@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import '../main.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -21,7 +20,7 @@ class LoginScreen extends StatelessWidget {
                 width: double.infinity,
                 child: OutlinedButton.icon(
                   onPressed: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const MainNavigator())),
-                  icon: const Icon(LucideIcons.chrome, color: Colors.red),
+                  icon: const Icon(Icons.web, color: Colors.red),
                   label: const Text('Google দিয়ে লগইন করুন', style: TextStyle(fontSize: 16, color: Colors.black87)),
                   style: OutlinedButton.styleFrom(padding: const EdgeInsets.symmetric(vertical: 16), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16))),
                 ),
